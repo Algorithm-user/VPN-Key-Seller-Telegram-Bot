@@ -1,0 +1,29 @@
+{
+  "name": "keys-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот для продажи ключей",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "node js/index.js",
+    "dev": "nodemon js/index.js",
+    "add-trial": "node scripts/add-keys.js trial",
+    "add-paid": "node scripts/add-keys.js paid",
+    "stats": "node scripts/add-keys.js stats"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "keys",
+    "vpn"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.3.1",
+    "better-sqlite3": "^9.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
